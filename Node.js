@@ -10,10 +10,10 @@ app.use(express.json());
 
 // Your personal details - UPDATE THESE
 const USER_DETAILS = {
-    full_name: "john_doe", // Replace with your actual name in lowercase
-    birth_date: "17091999", // Replace with your birth date (ddmmyyyy)
-    email: "john@xyz.com", // Replace with your email
-    roll_number: "ABCD123" // Replace with your college roll number
+    full_name: "kavya_ramatatagari",
+    birth_date: "03082005", 
+    email: "kavya.22bce9753@vitapstudent.ac.in",
+    roll_number: "22BCE9753"
 };
 
 // Helper function to check if a string is numeric
