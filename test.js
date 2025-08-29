@@ -57,17 +57,17 @@ const makeRequest = (data, callback) => {
 };
 
 // Run tests
-console.log('🚀 Starting API tests...\n');
+console.log('Starting API tests...\n');
 console.log('Make sure your server is running on localhost:3000\n');
 
 testCases.forEach((testCase, index) => {
     setTimeout(() => {
-        console.log(`\n📝 Testing ${testCase.name}:`);
+        console.log(`\n Testing ${testCase.name}:`);
         console.log(`Input: ${JSON.stringify(testCase.data)}`);
         
         makeRequest(testCase.data, (error, response, statusCode) => {
             if (error) {
-                console.error(`❌ Error: ${error.message}`);
+                console.error(`Error: ${error.message}`);
                 return;
             }
             
@@ -76,7 +76,7 @@ testCases.forEach((testCase, index) => {
             console.log(JSON.stringify(response, null, 2));
             
             if (index === testCases.length - 1) {
-                console.log('\n✅ All tests completed!');
+                console.log('\n All tests completed!');
             }
         });
     }, index * 1000); // Stagger requests by 1 second
